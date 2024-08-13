@@ -1,2 +1,2 @@
-# Application-
-With use by tkinter 
+# home wotk-
+use by from python
