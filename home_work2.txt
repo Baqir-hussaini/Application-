@@ -1,0 +1,33 @@
+#fact
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+num = int(input("Enter a number: "))
+result = factorial(num)
+print(f"The factorial of {num} is {result}")
+#fibu
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return (fibonacci(n-1) + fibonacci(n-2))
+
+num_terms = int(input("How many terms of the Fibonacci sequence do you want to see? "))
+
+print("The Fibonacci sequence is:")
+for i in range(num_terms):
+    print(fibonacci(i))
+def hanoi(n, from_peg, to_peg, aux_peg):
+    if n == 1:
+        print(f"Move disk 1 from {from_peg} to {to_peg}")
+        return
+    hanoi(n-1, from_peg, aux_peg, to_peg)
+    print(f"Move disk {n} from {from_peg} to {to_peg}")
+    hanoi(n-1, aux_peg, to_peg, from_peg)
+
+# Test the function
+n = 6
+hanoi(n, 'A', 'C', 'B')
