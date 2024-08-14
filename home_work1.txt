@@ -1,4 +1,4 @@
-
+python bultine func
 abs()
 x = -10
 print(abs(x)) # Output: 10
@@ -15,6 +15,7 @@ print(any(mixed_list)) # Output: True
 ascii()
 text = "الساحر"
 print(ascii(text)) # Output: '\\u0627\\u0644\\u0633\\u0627\\u062d\\u0631'
+4
 bin()
 num = 42
 print(bin(num)) # Output: '0b101010'
@@ -24,8 +25,8 @@ print(bool(0)) # Output: False
 print(bool(1)) # Output: True
 print(bool("")) # Output: False
 print(bool("hello")) # Output: True
-7.bytearray()
-python
+7.
+bytearray()
 byte_arr = bytearray(5)
 print(byte_arr) # Output: bytearray(b'\x00\x00\x00\x00\x00')
 bytes()
@@ -87,8 +88,7 @@ for i, fruit in enumerate(fruits):
 # 2 cherry
 ```
 
-3. **eval()**:
-```python
+3.eval()
 x = 5
 expression = "x + 10"
 result = eval(expression)
